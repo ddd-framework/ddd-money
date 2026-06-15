@@ -117,34 +117,11 @@ class Currency extends ValueObject
      * @var string|null ISO 4217 3-letter currency code
      * @example EUR, USD
      */
-    #[Choice(choices: [
-        self::ARS,
-        self::AUD,
-        self::BRL,
-        self::CAD,
-        self::CHF,
-        self::CLP,
-        self::COP,
-        self::CZK,
-        self::EUR,
-        self::GBP,
-        self::HUF,
-        self::IDR,
-        self::INR,
-        self::JPY,
-        self::MXN,
-        self::NOK,
-        self::PEN,
-        self::PHP,
-        self::PLN,
-        self::MYR,
-        self::RUB,
-        self::SEK,
-        self::SGD,
-        self::USD,
-        self::VEF,
-        self::ZAR
-    ])]
+    // Validate against the single canonical currency list — same source the constructor checks
+    // (in_array(..., self::ALLOWED_CURRENCIES)). Referencing the constant instead of duplicating the
+    // codes here keeps the #[Choice] validation, the constructor, and ALLOWED_CURRENCIES from ever
+    // drifting apart (a duplicated literal list previously went stale when new ISO codes were added).
+    #[Choice(choices: self::ALLOWED_CURRENCIES)]
     public ?string $isoCode = self::DEFAULT_ISO_CODE;
     /**
      * @var string currency symbol
