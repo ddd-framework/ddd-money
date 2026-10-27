@@ -3,7 +3,7 @@
     "description": "Currency and MoneyAmount value objects for mgamadeus/ddd",
     "minimum-stability": "stable",
     "license": "MIT",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "authors": [
         {
             "name": "Marius-Eugen Gerdan",
@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "mgamadeus/ddd": "^2.10"
+        "mgamadeus/ddd": "^2.10 || ^3.0"
     },
     "autoload": {
         "psr-4": {
