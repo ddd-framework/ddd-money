@@ -86,7 +86,7 @@ class MoneyAmount extends ValueObject
     /**
      * Format: `<amount with 2 decimals, comma separator> <isoCode>` — e.g. `"12,50 EUR"`.
      * German-locale decimal-comma convention matches existing UI conventions in downstream
-     * consumers (RC, Radbonus). Null amount renders as `"0,00 <isoCode>"`.
+     * consumers. Null amount renders as `"0,00 <isoCode>"`.
      */
     public function __toString(): string
     {
