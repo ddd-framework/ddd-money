@@ -1,6 +1,6 @@
 # mgamadeus/ddd-common-money
 
-Currency and MoneyAmount value objects for the [mgamadeus/ddd](https://github.com/mgamadeus/ddd) framework.
+Currency and MoneyAmount value objects for the [mgamadeus/ddd](https://github.com/ddd-framework/ddd) framework.
 
 ## Installation
 

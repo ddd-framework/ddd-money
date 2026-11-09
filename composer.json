@@ -3,7 +3,12 @@
     "description": "Currency and MoneyAmount value objects for mgamadeus/ddd",
     "minimum-stability": "stable",
     "license": "MIT",
-    "version": "1.2.2",
+    "homepage": "https://github.com/ddd-framework/ddd-money",
+    "support": {
+        "issues": "https://github.com/ddd-framework/ddd-money/issues",
+        "source": "https://github.com/ddd-framework/ddd-money"
+    },
+    "version": "1.2.3",
     "authors": [
         {
             "name": "Marius-Eugen Gerdan",
