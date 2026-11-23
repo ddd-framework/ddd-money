@@ -58,3 +58,4 @@
 .idea
 
 composer.lock
+/.phpunit.cache/

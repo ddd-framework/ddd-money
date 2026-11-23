@@ -8,7 +8,7 @@
         "issues": "https://github.com/ddd-framework/ddd-money/issues",
         "source": "https://github.com/ddd-framework/ddd-money"
     },
-    "version": "1.2.3",
+    "version": "1.2.4",
     "authors": [
         {
             "name": "Marius-Eugen Gerdan",
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "mgamadeus/ddd": "^2.10 || ^3.0"
+        "mgamadeus/ddd": "^3.40.0"
     },
     "autoload": {
         "psr-4": {
@@ -29,6 +29,14 @@
     "config": {
         "allow-plugins": {
             "symfony/runtime": true
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DDD\\Tests\\Money\\": "tests/"
         }
     }
 }
